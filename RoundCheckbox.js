@@ -24,6 +24,7 @@ export default class RoundCheckbox extends React.PureComponent {
     iconColor: 'white',
     borderColor: 'grey',
     checked: false,
+    imagePadding: 0,
     onValueChange: () => {},
   };
 
@@ -43,8 +44,8 @@ export default class RoundCheckbox extends React.PureComponent {
   }
 
   render() {
-    const { size, backgroundColor, borderColor, icon, iconColor, style } = this.props;
-    const iconSize = size;
+    const { size, backgroundColor, borderColor, icon, iconColor, style, imagePadding } = this.props;
+    const iconSize = size + imagePadding;
 
     const bothStyles = {
       width: size,
