@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Animated, View, TouchableWithoutFeedback, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const hitSlop = { top: 8, bottom: 8, left: 8, right: 8 };
 
@@ -18,7 +18,7 @@ export default class RoundCheckbox extends React.PureComponent {
   };
 
   static defaultProps = {
-    icon: 'ios-checkmark',
+    icon: 'check',
     size: 24,
     backgroundColor: '#007AFF',
     iconColor: 'white',
